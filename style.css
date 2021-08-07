@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background:#3f573f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background: rgb(104, 103, 103);
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr; 
+    box-shadow: 0 35px 55px rgba(146, 9, 9, 0.1); 
+}
+
+.container .left_side{
+    position: relative;
+    background:rgb(139, 114, 114);
+    padding: 40px;
+}
+.profile_text{
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(89,43%,51%,0.3); 
+}
+.profile_text .image{
+    position: relative;
+    width:200px;
+    height:200px;
+    border-radius: 60%;
+    overflow: hidden;
+}
+.profile_text .image img{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+.profile_text h2{
+    color:rgb(7, 6, 6);
+    font-size: 1.5em;
+    margin-top: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+.profile_text h2 span{
+    font-size: 0.8em;
+    font-weight: 300;
+}
+.contact_info{
+    padding: 40px;
+    
+}
+.about_me{
+    position:relative;
+    color:rgb(251, 251, 251);
+    margin: 10px 0;
+    font-weight: 400;
+}
+.title{
+    color:rgb(7, 2, 2);
+    text-transform: uppercase;
+    font-weight:600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}.contact_info ul{
+    position:relative;
+}
+.contact_info ul li{
+    list-style: none;
+    position:flex;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.contact_info ul li .icon
+{
+    display:inline-flex;
+    width:30px;
+    font-size: 18px;
+    color:#311423;
+}
+.contact_info ul li span{
+    color:rgb(70, 11, 11);
+    font-weight:300;
+}
+
+.contact_info .tool_tech .percent{
+    position: relative;
+    width:100%;
+    height:6px;
+    background:#373838fd;
+    display:block;
+    margin-top: 4x;
+}
+.contact_info .tool_tech .percent div{
+    position: absolute;
+    top:0;
+    left:0;
+    height:100%;
+    background:darkred
+}
+.container .right_side{
+    position:relative;
+    background:rgb(53, 110, 110);
+    padding: 40px;
+}
+.about{
+    margin-bottom: 40px;
+}
+.about:last-child{
+    margin-bottom: 0;
+}
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+td, th{
+    border: 1px solid #5d1414;
+    text-align: left;
+    padding: 8px;
+}
+.techinalskill{
+    margin-top: 40px;
+}
+.interpersonalskill{
+    margin-top: 40px;
+}
+.experience{
+    margin-top: 40px;
+}
